@@ -1,15 +1,14 @@
-<?php 
+<?php
 require_once 'data/asrama.php';
 
+use asrama\{Musyrif, KetuaKamar};
 
 $musyrif = new Musyrif();
-$musyrif->nama = "Epan";
+$musyrif->namaMusrip = "Epan";
 $musyrif->salam("Hani");
 
 echo "\n";
 
 $ketua = new KetuaKamar();
-$ketua->nama = "Pahri";
+$ketua->namaKetua = "Pahri";
 $ketua->salam("Fauzan");
-
-
