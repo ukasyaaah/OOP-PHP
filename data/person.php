@@ -2,6 +2,9 @@
 
 class Person
 {
+    // Constant
+    const DEV = "Ukhasyah";
+
     // Properties / Fields
     var string $objectName = "Ukhasyah";
     var string $address = "Jakarta";
@@ -15,5 +18,10 @@ class Person
         } else {
             echo "Hi $functName!, It's $this->objectName";
         }
+    }
+
+    function info()
+    {
+        echo "Developer :" . self::DEV;
     }
 }
