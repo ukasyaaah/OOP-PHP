@@ -2,6 +2,7 @@
 
 class Person
 {
+
     // Constant
     const DEV = "Ukhasyah";
 
@@ -9,6 +10,13 @@ class Person
     var string $objectName = "Ukhasyah";
     var string $address = "Jakarta";
     var ?string $country = null;
+
+    /// Constructor
+    function __construct(string $name, string $address)
+    {
+        $this->objectName = $name;
+        $this->address = $address;
+    }
 
     function sayHi(?string $functName)
     {
@@ -23,5 +31,10 @@ class Person
     function info()
     {
         echo "Developer :" . self::DEV;
+    }
+
+    function __destruct()
+    {
+        echo "Object Person $this->objectName will be destroyed";
     }
 }
