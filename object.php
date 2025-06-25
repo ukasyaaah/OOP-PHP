@@ -6,15 +6,18 @@ require_once 'data/person.php';
 $person = new Person();
 
 // Manipulasi Properties 
-$person->name = "Ukhasyah";
+$person->objectName = "Ukhasyah";
 $person->address = "Semarang";
 $person->country = null;
 
-echo "Nama : $person->name" . PHP_EOL;
+echo "Nama : $person->objectName" . PHP_EOL;
 echo "Address : $person->address" . PHP_EOL;
 echo "Country : $person->country" . PHP_EOL;
+echo $person->sayHi($person->objectName) . PHP_EOL;
 
 var_dump($person); // Ukhasyah
 
 $person2 = new Person();
-var_dump($person2); // Jakarta
+$person2->sayHi(null); // Hi There, I'm Ukhasyah
+
+
