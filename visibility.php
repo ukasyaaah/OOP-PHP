@@ -11,3 +11,5 @@ echo $apple->getPrice() . PHP_EOL;
 $productLain = new ProductLain("Gula", 12_000);
 $productLain->info() . PHP_EOL;
 // $productLain->name; // Cannot access protected property
+
+
