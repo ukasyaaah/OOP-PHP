@@ -3,12 +3,15 @@ require_once 'data/animal.php';
 require_once 'data/animalshelter.php';
 require_once 'data/library.php';
 require_once 'data/book.php';
+require_once 'data/food.php';
 
-use Data\{Cat, CatShelter, NovelShelf};
+use Data\{NovelShelf, CatShelter, Food};
+
+
 
 $catShelter = new CatShelter();
 $catt = $catShelter->adopt('Brino');
-var_dump($catt);
+$cat->eate(new Food());
 
 
 $bookrent = new NovelShelf();
