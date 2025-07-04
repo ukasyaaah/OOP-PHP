@@ -1,6 +1,6 @@
 <?php
 
-class Produk
+class Produkk
 {
     // Property
     public $judul, $kategori;
@@ -23,14 +23,14 @@ class Produk
     }
 }
 
-class CetakInfoProduk
-{
-    // Object Type 
-    public function cetak(Produk $produk): string
-    {
-        return $str = "{$produk->judul} | {$produk->kategori}";
-    }
-}
+// class CetakInfoProduk
+// {
+//     // Object Type 
+//     public function cetak(Produk $produk): string
+//     {
+//         return $str = "{$produk->judul} | {$produk->kategori}";
+//     }
+// }
 
 
 

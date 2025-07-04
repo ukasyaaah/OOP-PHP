@@ -2,7 +2,7 @@
 require_once 'produk.php';
 // Film : Laut Bercerita | Leila S. Chudori - 379 halaman
 
-class Buku extends Produk
+class Buku extends Produkk
 {
     public $halaman;
     protected $penulis;
@@ -26,7 +26,7 @@ class Buku extends Produk
     }
 }
 
-class Film extends Produk
+class Film extends Produkk
 {
     public string $sutradara;
     public int $jam;
