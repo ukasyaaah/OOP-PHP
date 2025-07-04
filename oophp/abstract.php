@@ -1,7 +1,7 @@
 <?php
 
 // Film : Laut Bercerita | Leila S. Chudori - 379 halaman
-abstract class Produk
+abstract class Produg
 {
     // Property
     public $judul, $kategori;
@@ -26,7 +26,7 @@ abstract class Produk
     }
 }
 
-class Buku extends Produk
+class Buku extends Produg
 {
     protected $halaman;
     protected $penulis;
@@ -73,7 +73,7 @@ class Buku extends Produk
     }
 }
 
-class Film extends Produk
+class Film extends Produg
 {
     public $sutradara;
     public $genre;
@@ -96,7 +96,7 @@ class CetakInfoProduk
 {
     public $daftar = [];
 
-    function tambahProduk(Produk $produk)
+    function tambahProduk(Produg $produk)
     {
         // Menambah elemen baru pada array
         $this->daftar[] = $produk;
