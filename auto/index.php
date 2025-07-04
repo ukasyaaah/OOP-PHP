@@ -9,3 +9,5 @@ $cetak = new CetakInfoProduk();
 $cetak->tambahProduk($buku);
 $cetak->tambahProduk($film);
 $cetak->cetak();
+
+echo "<hr>";
